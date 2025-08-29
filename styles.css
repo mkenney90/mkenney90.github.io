@@ -6,4 +6,6 @@ body {
 div.container {
     width: 90vw;
     height: 100vh;
+    margin: 0 auto;
+    padding: 1em;
 }
