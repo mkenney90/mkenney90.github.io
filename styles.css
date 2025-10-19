@@ -16,14 +16,16 @@ div.bracket-floater-parent {
     position: sticky;
     height: 0px;
     overflow: visible;
-    top: 40%;
+    top: 50%;
 }
 
 div.bracket-floater {
     position: relative;
-    left: 10%;
+    left: -20%;
     font-size: 40vh;
     transform: translateY(-50%);
+    text-shadow: #00adb599 2px 1px;
+    font-weight: 200;
 }
 
 div.container {
@@ -89,6 +91,14 @@ header h1 {
 
 header h2 {
     margin: 2rem;
+}
+
+.page-anchor {
+    display: inline-block;
+    text-decoration: solid;
+    font-weight: 550;
+    color: seagreen;
+    margin: 0 auto;
 }
 
 /* Navigation */
