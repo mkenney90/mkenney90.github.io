@@ -7,9 +7,23 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f9f9f9;
+  background-color: #e4e4e4;
   color: #333;
   line-height: 1.6;
+}
+
+div.bracket-floater-parent {
+    position: sticky;
+    height: 0px;
+    overflow: visible;
+    top: 40%;
+}
+
+div.bracket-floater {
+    position: relative;
+    left: 10%;
+    font-size: 40vh;
+    transform: translateY(-50%);
 }
 
 div.container {
@@ -18,12 +32,30 @@ div.container {
     padding: 2em 4em;
 }
 
+div.container a {
+    display: list-item;
+    list-style:inside;
+    text-decoration: solid;
+    font-weight: 550;
+    color: seagreen;
+}
+
+div.container a:hover {
+    text-decoration: underline;
+    color:rgb(177, 102, 17);
+    transition-duration: 150ms;
+}
+
 h2 {
     margin: 2rem -0.15rem;
 }
 
 h3 {
     margin: 2.5rem 0 1.0rem 0;
+}
+
+h4 {
+    margin: 1.6rem 0 1.0rem 0;
 }
 
 .enhancements {
@@ -47,6 +79,7 @@ header {
   color: white;
   padding: 1.5rem 2rem;
   text-align: center;
+  max-height: 20vh;
 }
 
 header h1 {
