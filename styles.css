@@ -1,11 +1,128 @@
+/* Reset and base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: #cccccc;
-    color: #333333;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
 div.container {
-    width: 90vw;
-    height: 100vh;
+    width: 60vw;
     margin: 0 auto;
-    padding: 1em;
+    padding: 2em 4em;
+}
+
+h2 {
+    margin: 2rem -0.15rem;
+}
+
+h3 {
+    margin: 2.5rem 0 1.0rem 0;
+}
+
+.enhancements {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #1cb69c25;
+    border-radius: 15px;
+}
+
+.enhancements p {
+    margin: 0.75rem 0;
+}
+
+.enhancements h3 {
+    margin-top: 0;
+}
+
+/* Header */
+header {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+header h2 {
+    margin: 2rem;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #00adb5;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #00adb5, #393e46);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Projects grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+}
+
+.project {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+  color: #00adb5;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1e1e1e;
+  color: #ccc;
+  font-size: 0.9rem;
 }
